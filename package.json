@@ -1,0 +1,24 @@
+{
+  "author": "3lvcz",
+  "bin": {
+    "justproxy": "./bin/justproxy"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "optimist": "^0.6.1",
+    "request": "^2.69.0"
+  },
+  "description": "",
+  "keywords": [
+    "proxy", "localhost"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "justproxy",
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/3lvcz/justproxy.git"
+  },
+  "version": "1.0.0"
+}

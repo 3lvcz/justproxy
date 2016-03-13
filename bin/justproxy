@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var startJustProxy = require('../');
+var argv = require('optimist')
+	.usage('Usage: justproxy -p [destination port]')
+	.demand(['p'])
+	.alias('p', 'port')
+	.alias('s', 'self')
+	.describe('p', 'Port to forward requests')
+	.describe('s', 'Port to start a proxy server on')
+	.describe('verbose', 'To log all requests')
+	.default({ s: 8080, verbose: false })
+	.argv;
+
+startJustProxy({
+	self: argv.s,
+	port: argv.p,
+	verbose: argv.verbose
+});
